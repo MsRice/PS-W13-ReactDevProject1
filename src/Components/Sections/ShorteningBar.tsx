@@ -40,20 +40,17 @@ const ShorteningBar = () => {
                             <p className="short__srt--str">${short.shortURL}</p>
 
 
-                            {copyiedId == index ? 
-                            <span className="copied">Copied!</span>
-                        :
+                        
                         <button 
-                            className="copy copy-btn" 
+                            className={` copy ${copyiedId == index ? 'copied' : ' '} copy-btn`} 
                             type="button"
                             aria-describedby={`short-url-${index}`}
                             onClick={() => {
                                 navigator.clipboard.writeText(short.shortURL)
                                 setCopyiedId(index)
-                            }}>Copy
-                            </button>
-                        }
-                        
+                            }}>
+                                {copyiedId === index ? 'Copied!' : 'Copy'}
+                        </button>
                     </div>
 
                     ))}

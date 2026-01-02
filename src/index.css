@@ -250,7 +250,7 @@ nav{
     justify-content: space-evenly;
     width: 20%;
 }
-.copy{
+.copy , .copied{
     border-radius: 5px;
     font-size: 1rem;
     padding: 1.6rem 2.8rem;
@@ -258,11 +258,21 @@ nav{
     font-weight: 800;
     background-color: #78ceD2;
     padding: 10px 22px;
-    border: #78ceD2;
-}
-.copied{
-    background-color: #393151;
+    cursor: pointer;
 
+    transition:
+        background-color 0.25s ease,
+        transform 0.15s ease,
+        opacity 0.2s ease;
+}
+.copy.copied{
+    background-color: #393151;
+    transform: scale(1.05);
+
+}
+
+.copy:active {
+  transform: scale(0.97);
 }
 
 /* Statistics */
@@ -543,7 +553,7 @@ footer{
     width: 40%;
 }
 .shortened--form
-.copy{
+.copy , .copied{
     border-radius: 5px;
     font-size: 1rem;
     padding: 1.6rem 2.8rem;
@@ -671,7 +681,7 @@ footer{
         width: 30%;
     }
     
-    .copy{
+    .copy , .copied{
         border-radius: 5px;
         font-size: 1rem;
         padding: 1.6rem 2.8rem;
