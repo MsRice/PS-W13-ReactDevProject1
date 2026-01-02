@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import type { ShorterProviderProps } from '../../types';
+import type { ShorterObj, ShorterProviderProps } from '../../types';
 import { ShorterContext } from './ShorterContext';
 
-const BITLY_ACCESS_TOKEN = "19cc0ac42c6a1bc852e896de107edfb3d534a64a"; 
+const BITLY_ACCESS_TOKEN = import.meta.env.VITE_BITLY_ACCESS_TOKEN 
 export default function ShorterProvider({children}:ShorterProviderProps){
 
-    const [shortURL , setShortURL] = useState<string>('')
+    const [shortList , setShortList] = useState<ShorterObj[]>([])
 
     const getShortening = async (longURL : string): Promise<string | void> => {
         if(!longURL) return
@@ -27,9 +27,13 @@ export default function ShorterProvider({children}:ShorterProviderProps){
             });
 
             const data: {link: string} = await response.json();
-            console.log('nt')
-            setShortURL(data.link)
-            console.log(shortURL)
+            setShortList(prev => [...prev,
+                {
+                    longURL:longURL,
+                    shortURL:data.link
+                }
+            ])
+            // console.log(shortURL)
             return data.link
 
         } catch (error) {
@@ -40,7 +44,7 @@ export default function ShorterProvider({children}:ShorterProviderProps){
 
 
     return (
-        <ShorterContext.Provider value={{getShortening , shortURL}}>
+        <ShorterContext.Provider value={{getShortening , shortList}}>
             {children}
         </ShorterContext.Provider>
     );
