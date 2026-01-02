@@ -33,7 +33,6 @@ export default function ShorterProvider({children}:ShorterProviderProps){
                     shortURL:data.link
                 }
             ])
-            // console.log(shortURL)
             return data.link
 
         } catch (error) {

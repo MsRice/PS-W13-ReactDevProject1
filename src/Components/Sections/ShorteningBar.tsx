@@ -2,14 +2,14 @@ import { useState } from "react";
 import { useShorter } from "../../Context/Shorter/ShorterContext";
 
 const ShorteningBar = () => {
-    const { getShortening  , shortURL} = useShorter()
+    const { getShortening  , shortList} = useShorter()
+
     const [longURL , setLongURL] = useState<string>('')
+    const [ copyiedId , setCopyiedId ] = useState<number | null>(null)
 
     function handleForm(e:React.FormEvent<HTMLFormElement>){
         e.preventDefault()
-        // console.log(longURL)
         getShortening(longURL)
-        console.log(shortURL)
     }
     return (
         <>
@@ -32,9 +32,33 @@ const ShorteningBar = () => {
         <section className="container" id="shortened">
 
             <div className="shortened--wrapper" id="shortened--wrapper">
-               
+
+                {shortList.map( (short, index) => (
+                    <div className="shortened-link--wrapper" key={index}>
+                        <p className="short__long--str">{short.longURL}</p>
+                        
+                            <p className="short__srt--str">${short.shortURL}</p>
+
+
+                            {copyiedId == index ? 
+                            <span className="copied">Copied!</span>
+                        :
+                        <button 
+                            className="copy copy-btn" 
+                            type="button"
+                            aria-describedby={`short-url-${index}`}
+                            onClick={() => {
+                                navigator.clipboard.writeText(short.shortURL)
+                                setCopyiedId(index)
+                            }}>Copy
+                            </button>
+                        }
+                        
+                    </div>
+
+                    ))}
             </div>
-        </section>
+            </section>
         </>
     );
 }
