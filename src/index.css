@@ -1,7 +1,7 @@
-*{
+/* *{
   color: chartreuse;
   background-color: #242424;
-}
+} */
 *{
     padding: 0;
     margin: 0;
@@ -621,9 +621,6 @@ footer{
 }
 
 @media screen and (max-width: 1800px){
-  body{
-        background-color: chartreuse;
-    }
     
     /* Nav */
 
