@@ -32,10 +32,10 @@ As part of the refresh, the project was refactored to:
   - Bitly API
   - Vercel (deployment)
 
-  
+
 ## Deployment 
 
-Deployed on Vercel:([Shortly by Rice](https://vercel.com/rice-maxwells-projects/ps-w8-p1-html-css-js/HLqAqqrKW4jPes6oS8Ksyzv4qHhu))
+ 🚀 Deployed on Vercel:([Shortly by Rice](https://shortly-by-rice.vercel.app/))
 
 
 ## Reflection
@@ -52,5 +52,5 @@ Deployed on Vercel:([Shortly by Rice](https://vercel.com/rice-maxwells-projects/
 ## Author
 
 Patrice(Rice 🍚) Maxwell 
-([thegrainofrice.com](https://www.thegrainofrice.com/))
-([Linkedin](https://www.linkedin.com/in/patrice-maxwell))
+🌐([thegrainofrice.com](https://www.thegrainofrice.com/))
+💼([Linkedin](https://www.linkedin.com/in/patrice-maxwell))
