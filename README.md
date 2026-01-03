@@ -1,73 +1,56 @@
+## Table of contents
+
+- [Overview](#overview)
+- [Built with](#built-with)
+  - [React + Typescript + Vite](#react--typescript--vite)
+- [Deployment](#deployment)
+- [Reflection](#reflection)
+- [Author](#author)
+
+
+## Overview
+
+This project is a refreshed and modernized version of an earlier HTML, CSS, and JavaScript assignment, updated to use TypeScript for improved type safety, maintainability, and developer experience.
+
+Originally built as Project 1 for a cumulative frontend assessment, the application implements a URL Shortening API Landing Page that integrates with the Bitly API. Users can submit long URLs, generate shortened links, view a list of previously shortened URLs, and copy links directly to the clipboard.
+
+As part of the refresh, the project was refactored to:
+
+- Introduce TypeScript for clearer data contracts and safer state handling
+
+- Improve component structure and readability
+
+- Prepare the codebase for easier future enhancements (UI feedback, persistence, testing, etc.)
+
+
+## Built with
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  - React
+  - TypeScript
+  - Vite
+  - Bitly API
+  - Vercel (deployment)
 
-Currently, two official plugins are available:
+  
+## Deployment 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Deployed on Vercel:([Shortly by Rice](https://vercel.com/rice-maxwells-projects/ps-w8-p1-html-css-js/HLqAqqrKW4jPes6oS8Ksyzv4qHhu))
 
-## React Compiler
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Reflection
 
-## Expanding the ESLint configuration
+  This project served as a strong example of how even a fairly simple application can reinforce good development practices when approached intentionally. While the overall functionality—shortening URLs and displaying results—was straightforward, the value came from focusing on clean structure, clarity, and iteration rather than complexity.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+  One of the most beneficial aspects of revisiting this project was refactoring it with TypeScript. Adding types encouraged me to be more deliberate about data flow, function contracts, and state management. It reduced ambiguity in how API responses were handled and made the code easier to reason about, especially when passing values between components and utility functions. This reinforced the importance of writing code that is not only functional, but also readable and maintainable.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+  Another key takeaway was working through real-world constraints, such as CORS issues with the originally suggested API. Adapting the project to use the Bitly API highlighted the need for flexibility and problem-solving when external dependencies don’t behave as expected. It also reinforced best practices around securing API keys and separating configuration from application logic.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+  Although the project itself was not technically complex, it was an effective exercise in fundamentals: making small, intentional commits, organizing files clearly, and building features incrementally. Overall, this project demonstrated that strong habits—clean code, thoughtful refactoring, and responsiveness to constraints—are just as important as advanced features when building reliable front-end applications.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Author
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Patrice(Rice 🍚) Maxwell 
+([thegrainofrice.com](https://www.thegrainofrice.com/))
+([Linkedin](https://www.linkedin.com/in/patrice-maxwell))

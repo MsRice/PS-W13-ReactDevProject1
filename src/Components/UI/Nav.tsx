@@ -1,12 +1,13 @@
-
+import gor_logo from '../../assets/images/gor_logo.png'
+import shortly_logo from '../../assets//images/svgs/logo.svg'
 const Nav = () => {
     return (
         <div className="container">
         <nav>
             <div className="nav_side_a">
                 <div className="logo__wrapper">
-                    <img className="logo_gor" src="./image/gor_presents.png" alt=""/>
-                    <img className="logo_shortly" src="./image/from_figma/logo.svg" alt=""/>
+                    <img className="logo_gor" src={gor_logo} alt=""/>
+                    <img className="logo_shortly" src={shortly_logo} alt=""/>
                 </div>
                 <ul className="nav__links ">
                 <li className="nav__link">Features</li>

@@ -1,9 +1,11 @@
 import RiceCodesLogo from '../../assets/images/Rice_logo_only_no_background.png'
+import { FaHandshake } from "react-icons/fa";
+import { FaGithub , FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer>
         <div className="footer--wrapper">
-            <div className="logo__link">Shortly</div>
+            <a href='#' className="logo__link">Shortly</a>
             <div className="connect__links">
                 <ul className="connect__links--wrapper">
                     <li className="connect__link--header">Features</li>
@@ -29,9 +31,9 @@ const Footer = () => {
                 </ul>
             </div>
             <ul className="social__links">
-                <li className="footer__link"><a href="https://app.joinhandshake.com/profiles/gqqjmh" target="_blank"><i className="fa-solid fa-handshake"></i></a></li>
-                <li className="footer__link"><a href="https://https://github.com/MsRice" target="_blank"><i className="fa-brands fa-github"></i></a></li>
-                <li className="footer__link"><a href="https://www.linkedin.com/in/patrice-maxwell" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
+                <li className="footer__link"><a href="https://app.joinhandshake.com/profiles/gqqjmh" target="_blank"><FaHandshake /></a></li>
+                <li className="footer__link"><a href="https://https://github.com/MsRice" target="_blank"><FaGithub /></a></li>
+                <li className="footer__link"><a href="https://www.linkedin.com/in/patrice-maxwell" target="_blank"><FaLinkedin /></a></li>
                 <li className="footer__link"><a href="https://www.thegrainofrice.com/patricemaxwell" target="_blank"><img className="footer__img" src={RiceCodesLogo} alt="" /></a></li>
             </ul>
         </div>

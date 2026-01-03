@@ -8,6 +8,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     transition: all .2s ease;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -210,7 +211,7 @@ nav{
     border-color: red;
 }
 
-.shortening--form:focus-within .add-link--wrapper{
+.shortening--form:focus-within+.add-link--wrapper{
     display: inline;
 }
 
@@ -455,6 +456,20 @@ footer{
 .footer__img{
     height: 2.3rem;
 }
+
+.logo__link:hover , .footer__link a:hover ,.connect__link:hover{
+    color: #78ceD2;
+}
+.footer__link a:hover ,.connect__link:hover{
+    cursor: not-allowed;
+}
+
+.footer__img:hover{
+    filter: invert(1)
+}
+
+
+
 .attribution { font-size: .7rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
