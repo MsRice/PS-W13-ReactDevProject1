@@ -24,6 +24,10 @@ const NavMobile = () => {
 
                 <FaBars className="fa-bars" aria-hidden="true"/>
             </div>
+            <div
+                className={`backdrop ${isOpen ? 'open' : ''}`}
+                onClick={() => setIsOpen(false)}
+                ></div>
             <nav className={`nav__links-dropdown--wrapper ${isOpen ? 'open' : ''}`}>
                 <div className='nav__cross--wrapper'                
                 onClick={() => setIsOpen(o => !o)}>
