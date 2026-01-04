@@ -3,14 +3,16 @@
 
 .landing--wrapper{
 
-    width: 100%;
-    height: calc(100% - var(--nav-height));
-    
+    width: 104%;
+    min-height: calc(100dvh - var(--nav-height));
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 
