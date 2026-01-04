@@ -4,8 +4,7 @@
 .landing--wrapper{
 
     width: 100%;
-    height: calc(90vh - var(--nav-height)); /* For older moobile browsers   */
-    height: calc(90dvh - var(--nav-height));
+    height: calc(100% - var(--nav-height));
     
     display: flex;
     flex-direction: column;
@@ -32,7 +31,6 @@
     text-align:center;
     padding: 
         2rem clamp(0.5rem, 3vw, 0.75rem) 3rem clamp(0.5rem, 3vw, 0.75rem);
-    outline: 2px solid #2AD0CE;
 }
 .landing__info--title{
     font-weight: 800;
