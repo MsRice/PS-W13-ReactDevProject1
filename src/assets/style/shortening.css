@@ -1,0 +1,78 @@
+   
+/* .shortening--wrapper{
+    outline: 3px solid red; /* Sanity Check */
+
+
+#shortening{
+    width: 100%;
+    height: 20vh;
+    height: 20dvh;
+    background: linear-gradient(to bottom , 
+    #ffffff 0%,
+    #ffffff 50%,
+    #F0F1F6 50%,
+    #F0F1F6 100%
+    ) ;
+    
+}
+.shortening--wrapper{
+
+    width: 100%;
+    height: 88%;
+    background-color: #393151;
+    border-radius: 5px;
+    margin-inline: .9rem 1.6rem;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    
+    background-image: url(../images/svgs/bg-shorten-mobile.svg);
+    background-repeat: no-repeat;
+    background-size:80% 78%;
+    background-position: 100% 0 ;
+
+}
+
+.shortening--form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    width: 100%;
+    height: 100%;
+
+    padding: .8rem;
+}
+.origin-link--bar ,.primary-sqr{
+    width: 100%;
+
+    padding: 1rem;
+    margin-inline: 0 ;
+
+    border: none;
+    border-radius: 4px;
+    line-height: 1;
+    font-size: 1rem;
+    
+}
+
+.origin-link--bar::placeholder{
+    color: rgb(180, 198, 204);
+    font-weight: 600
+}
+
+
+.add-link--wrapper{
+    align-items: start;
+    justify-content: start;
+    width: 93%;
+    padding-top: 4px;
+
+    display: none;
+}
+.add-link{
+    color: red;
+} 
