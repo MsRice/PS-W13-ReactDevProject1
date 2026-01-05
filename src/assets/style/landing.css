@@ -4,18 +4,17 @@
 .landing--wrapper{
 
     width: 104%;
-    min-height: calc(100dvh - var(--nav-height));
+    min-height: calc(98vh - var(--nav-height));
+    min-height: calc(98dvh - var(--nav-height));
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow-x: hidden;
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
 }
-
-
 .landing__img--image{
     display: block;
     width: min(170%, 1800px);
@@ -32,7 +31,7 @@
     
     text-align:center;
     padding: 
-        2rem clamp(0.5rem, 3vw, 0.75rem) 3rem clamp(0.5rem, 3vw, 0.75rem);
+    2rem clamp(0.5rem, 3vw, 0.75rem) 3rem clamp(0.5rem, 3vw, 0.75rem);
 }
 .landing__info--title{
     font-weight: 800;
@@ -45,4 +44,79 @@
     font-size: clamp(1.2rem, 2.5vw, 1.6rem);
     font-weight: 700;
     padding-bottom: 1.8rem;
+}
+
+/*  Tablet */
+@media (min-width: 768px){
+    .landing__img--image{
+        width: min(125%, 1800px);
+        margin-left: 70%;
+    }
+    .landing__info--wrapper{
+        height: 50%;
+        padding: 
+        5rem clamp(0.5rem, 3vw, 0.75rem) 3rem clamp(0.5rem, 3vw, 0.75rem);
+    }
+}
+/* Mobile Landscape */
+@media (orientation: landscape) and (max-height: 500px) {
+    .landing--wrapper{
+
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+        padding: 0;
+    }
+    .landing__img--image{
+        display: block;
+        width: min(100%, 500px);
+        margin-left: 0;
+        margin-right: -14%;
+    }
+
+
+}
+
+/*  Laptop */
+@media (min-width: 1024px){
+    .landing--wrapper{
+        
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+        padding: 0;
+    }
+    .landing__img--image{
+        display: block;
+        width: min(100%, 500px);
+        margin-left: 0;
+        margin-right: -6%;
+    }
+  
+}
+
+/*  Desktop */
+@media (min-width: 1280px){
+    .landing--wrapper{
+        overflow-x: visible;
+    }
+     .landing__img--image{
+        display: block;
+        width: min(150%, 1500px);
+        margin-left: 0;
+        margin-right: -16%;
+    }
+    .landing__info--btn.primary{
+        font-size: clamp(.7rem, 2vw, 1rem);
+        padding: 
+            clamp(0.3rem, 3vw, 0.75rem)
+            clamp(2.75rem, 6vw, 2.95rem);
+
+    }
+}
+/*  Large Screens */
+@media (min-width: 1536px) {
+
 }

@@ -18,3 +18,38 @@
     padding: 0 .9rem  .8rem 0rem;
     color: #ffffff;
 }
+
+/*  Tablet */
+@media (min-width: 768px){
+    .boost--wrapper{
+        background-image: url(../images/svgs/bg-boost-desktop.svg);
+    }
+    .boost__info--title{
+        font-size: clamp(1.6rem , 4vw , 1.8rem);
+    }
+    .boost__info--sub-title{
+        font-size: clamp(1.3rem , 4vw , 1.5rem);
+    }
+}
+
+
+/* Mobile Landscape */
+@media (orientation: landscape) and (max-height: 500px) {
+    .boost--wrapper{
+        height: 34vh;
+        height: 34dvh;
+        background-image: url(../images/svgs/bg-boost-desktop.svg);
+    }
+    .boost__info--title{
+        font-size: clamp(1.4rem , 4vw , 1.6rem);
+    }
+    .boost__info--sub-title{
+        font-size: clamp(.9rem , 4vw , 1.1rem);
+    }
+    .boost__info--sub-title.primary{
+          padding: 
+            clamp(0.5rem, 3vw, 0.75rem)
+            clamp(1.75rem, 6vw, 1.95rem);
+
+    }
+}

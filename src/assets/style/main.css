@@ -22,9 +22,7 @@ body.menu-open , html.menu-open {
     width: 100%;
     max-width: 1200px;
     padding-inline: 0 1rem;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
+   
 }
 
 
@@ -36,10 +34,24 @@ body.menu-open {
   overflow-x: hidden;
 }
 /*  Tablet */
-@media (min-width: 768px){}
+@media (min-width: 768px){
+}
+
+/* Mobile Landscape */
+@media (orientation: landscape) and (max-height: 500px) {
+
+}
+
 /*  Laptop */
-@media (min-width: 1024px){}
+@media (min-width: 1024px){
+  
+}
 /*  Desktop */
-@media (min-width: 1280px){}
+@media (min-width: 1280px){
+  
+}
 /*  Large Screens */
-@media (min-width: 1536px) {}
+@media (min-width: 1536px) {
+
+
+}

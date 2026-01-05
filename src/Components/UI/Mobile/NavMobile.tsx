@@ -11,7 +11,7 @@ const NavMobile = () => {
     }, [isOpen]);
 
     return (
-        <>
+        <div className="nav__menu">
             <div className="logo__wrapper">
                 <img className="logo_gor" src={gor_logo} alt=""/>
                 <img className="logo_shortly" src={shortly_logo} alt=""/>
@@ -43,7 +43,7 @@ const NavMobile = () => {
                 </ul>
 
             </nav>
-        </>
+        </div>
     );
 }
 

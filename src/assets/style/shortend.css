@@ -63,3 +63,21 @@
 .copy:active {
   transform: scale(0.97);
 }
+
+/*  Laptop */
+@media (min-width: 1024px){
+  .shortened-link--wrapper{
+   outline: 4px solid orange;
+    justify-content: space-between;
+    padding: 1.8rem 1.6rem;
+    margin: 1rem 0;
+    flex-direction: row;
+    
+}
+.short__long--str{
+    width: 100%;
+}
+.short__srt--str{
+    width: 50%;
+}
+}

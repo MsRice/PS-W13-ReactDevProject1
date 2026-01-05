@@ -5,7 +5,7 @@ import NavMobile from './Mobile/NavMobile';
 const Nav = () => {
     return (
     <div className="container">
-        <nav className="nav__menu">
+        <nav>
             <NavDesktop />
             <NavMobile />
         </nav>
